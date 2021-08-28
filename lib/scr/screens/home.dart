@@ -233,7 +233,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 67,
+        height: 66,
         color: white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
