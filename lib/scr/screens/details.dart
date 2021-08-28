@@ -26,7 +26,7 @@ class _DetailsState extends State<Details> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 400,
+              height: 300,
               child: Stack(children: [
                 Carousel(
                   images: [
@@ -113,8 +113,61 @@ class _DetailsState extends State<Details> {
                       ),
                     ),
                   ),
-                )
+                ),
               ]),
+            ),
+            CustomText(
+                text: widget.product.name,
+                size: 24,
+                color: black,
+                weight: FontWeight.bold),
+            CustomText(
+                text: "\$ " + widget.product.price.toString(),
+                size: 18,
+                color: red,
+                weight: FontWeight.w500),
+            SizedBox(height: 15),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.remove,
+                      size: 36,
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: red,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(28, 12, 28, 12),
+                      child: CustomText(
+                          text: 'Add to Bag',
+                          size: 24,
+                          color: white,
+                          weight: FontWeight.w600),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.add,
+                      size: 36,
+                      color: red,
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),

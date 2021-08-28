@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_orderv1/scr/helpers/screen_navigation.dart';
 import 'package:food_orderv1/scr/helpers/style.dart';
+import 'package:food_orderv1/scr/screens/bag.dart';
 import 'package:food_orderv1/scr/widgets/bottom_navigation_icons.dart';
 import 'package:food_orderv1/scr/widgets/categories.dart';
 import 'package:food_orderv1/scr/widgets/custom_text.dart';
@@ -238,10 +240,28 @@ class _HomeState extends State<Home> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            BottomNavIcon(image: 'home2.png', name: 'Home'),
-            BottomNavIcon(image: 'target2.png', name: 'NearBy'),
-            BottomNavIcon(image: 'shopping_cart2.png', name: 'Cart'),
-            BottomNavIcon(image: 'profile2.png', name: 'Account'),
+            BottomNavIcon(
+              image: 'home2.png',
+              name: 'Home',
+              onTap: () {},
+            ),
+            BottomNavIcon(
+              image: 'target2.png',
+              name: 'NearBy',
+              onTap: () {},
+            ),
+            BottomNavIcon(
+              image: 'shopping_cart2.png',
+              name: 'Cart',
+              onTap: () {
+                changeScreen(context, ShoppingBag());
+              },
+            ),
+            BottomNavIcon(
+              image: 'profile2.png',
+              name: 'Account',
+              onTap: () {},
+            ),
           ],
         ),
       ),

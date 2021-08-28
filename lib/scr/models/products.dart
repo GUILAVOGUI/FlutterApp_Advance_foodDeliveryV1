@@ -4,6 +4,7 @@ class Product {
   final double rating;
   final double price;
   final String vendor;
+  // final String details;
   final wishList;
 
   Product(
@@ -12,5 +13,6 @@ class Product {
       required this.rating,
       required this.vendor,
       required this.wishList,
-      required this.price});
+      required this.price,
+      String? details});
 }
