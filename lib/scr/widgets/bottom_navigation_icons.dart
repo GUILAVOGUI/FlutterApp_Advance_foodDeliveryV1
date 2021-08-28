@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../commons.dart';
+import '../helpers/style.dart';
 import 'custom_text.dart';
 
 class BottomNavIcon extends StatelessWidget {

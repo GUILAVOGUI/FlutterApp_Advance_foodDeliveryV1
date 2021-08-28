@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_orderv1/scr/commons.dart';
+import 'package:food_orderv1/scr/helpers/style.dart';
 import 'package:food_orderv1/scr/widgets/bottom_navigation_icons.dart';
 import 'package:food_orderv1/scr/widgets/categories.dart';
 import 'package:food_orderv1/scr/widgets/custom_text.dart';
 import 'package:food_orderv1/scr/widgets/featured_products.dart';
 import 'package:food_orderv1/scr/widgets/small_floating_button.dart';
-import '../commons.dart';
+import '../helpers/style.dart';
 
 import '../widgets/custom_text.dart';
 

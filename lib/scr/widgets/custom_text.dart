@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_orderv1/scr/commons.dart';
+import 'package:food_orderv1/scr/helpers/style.dart';
 
-import '../commons.dart';
+import '../helpers/style.dart';
 
 class CustomText extends StatelessWidget {
   final String text;

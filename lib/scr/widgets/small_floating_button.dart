@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:food_orderv1/scr/commons.dart';
+import 'package:food_orderv1/scr/helpers/style.dart';
 
 class SmallButton extends StatelessWidget {
   final IconData icon;
