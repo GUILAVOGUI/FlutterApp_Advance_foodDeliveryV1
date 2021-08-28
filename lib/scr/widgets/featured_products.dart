@@ -8,12 +8,13 @@ import 'custom_text.dart';
 
 List<Product> productsList = [
   Product(
-      name: "Cereal",
-      image: "1.png",
-      rating: 3.6,
-      vendor: "GoodFood",
-      wishList: true,
-      price: 5.99),
+    name: "Cereal",
+    image: "1.png",
+    rating: 3.6,
+    vendor: "GoodFood",
+    wishList: true,
+    price: 5.99,
+  ),
   Product(
       name: "Taccos",
       image: "5.png",
